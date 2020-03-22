@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/name_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text"
+        android:textSize="20sp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_tag"
+        app:layout_constraintTop_toTopOf="@+id/name_tag"/>
+
+    <TextView
+        android:id="@+id/slack_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:text="@string/slack_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_tag" />
+
+
+    <TextView
+        android:id="@+id/slack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slack_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/slack_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toEndOf="@+id/slack_tag"
+        app:layout_constraintTop_toTopOf="@+id/slack_tag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/start_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+        android:text="@string/startNG_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slack_tag" />
+
+    <TextView
+        android:id="@+id/startng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:text="@string/startNG_text"
+        app:layout_constraintBottom_toBottomOf="@+id/start_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start_tag"
+        app:layout_constraintTop_toTopOf="@+id/start_tag" />
+
+    <TextView
+        android:id="@+id/track_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:text="@string/tracks_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_tag"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/tracks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:textSize="20sp"
+        android:text="@string/tracks_text"
+        app:layout_constraintBottom_toBottomOf="@+id/track_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/track_tag"
+        app:layout_constraintTop_toTopOf="@+id/track_tag" />
+</androidx.constraintlayout.widget.ConstraintLayout>

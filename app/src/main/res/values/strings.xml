@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StartFirstApp</string>
+
+    <string name="name_label">Full name: </string>
+    <string name="slack_label">Slack Username: </string>
+    <string name="startNG_label">Start.NG email address: </string>
+    <string name="tracks_label">Tracks: </string>
+
+    <string name="name_text"> Bukunmi Elizabeth Ola</string>
+    <string name="slack_text">  Bukunmi-Ola</string>
+    <string name="startNG_text"> ebukunmiola@gmail.com</string>
+    <string name="tracks_text"> Mobile, BackEnd, Coding.</string>
+</resources>
